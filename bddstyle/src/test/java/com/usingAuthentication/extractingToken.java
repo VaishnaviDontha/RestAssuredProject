@@ -55,19 +55,19 @@ public class extractingToken {
 
         
         collectionIsbn isbn = new collectionIsbn();
-        isbn.setIsbn("9781449331818");
+        isbn.setIsbn("9781593275846");
 
         List<collectionIsbn> isbnList = new ArrayList<collectionIsbn>();
         isbnList.add(isbn);
 
         payloadPOJO payload = new payloadPOJO();
-        payload.setUserId("9b5f49ab-eea9-45f4-9d66-bcf56a531b85");
+        payload.setUserId("0fd523c4-e61e-4b6a-8abb-64a56d94876f");
         payload.setCollectionOfIsbns(isbnList);
         
 
         response = requestSpecification.body(payload).post("https://bookstore.toolsqa.com/BookStore/v1/Books");
 
-        Assert.assertEquals(201, response.getStatusCode());
+        System.out.println(response.getStatusCode());
 
         response.prettyPrint();
     }
