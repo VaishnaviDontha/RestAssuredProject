@@ -1,0 +1,3 @@
+[submodule "httpClient"]
+	path = httpClient
+	url = https://github.com/VaishnaviDontha/httpClient.git
