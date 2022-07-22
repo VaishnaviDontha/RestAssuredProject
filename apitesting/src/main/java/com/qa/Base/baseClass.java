@@ -3,13 +3,13 @@ package com.qa.Base;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.HashMap;
 import java.util.Properties;
 
 public class baseClass {
 
-    public int Response_Status_Code_200 = 200;
+   public int Response_Status_Code_200 = 200;
    public int Response_Status_Code_201 = 201;
+   public int Response_Status_Code_204 = 204;
    public int Response_Status_Code_400 = 400;
    public int Response_Status_Code_401 = 401;
    public int Response_Status_Code_500 = 500;
